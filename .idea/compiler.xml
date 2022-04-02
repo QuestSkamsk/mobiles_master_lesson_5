@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mobiles_master_lesson_5" />
+        <module name="GB_Mobile_Auto" />
+        <module name="mobiles-master" />
+        <module name="mobil_auto" />
+        <module name="mobile_auto" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
