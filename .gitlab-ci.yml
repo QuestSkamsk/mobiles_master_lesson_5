@@ -1,0 +1,32 @@
+default:
+  tags:
+    - gb-runner
+stages:
+  - precondition
+  - test
+  - variables
+
+test_tun_job:
+  stage: test
+  only:
+    - lesson_8
+  script:
+    - mvn clean test  -DsuiteXmlFile=testng.xml
+  artifacts:
+    when: always
+    paths:
+      - allure-results
+
+get_variables_job:
+  stage: variables
+  only:
+    - lesson_8
+  script:
+    - echo $my_variables
+
+python_job:
+  stage: precondition
+  only:
+    - lesson_8
+  script:
+    - python test.py
